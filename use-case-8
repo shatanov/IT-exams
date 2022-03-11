@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-03-11T10:15:35.365Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="CgSmscvN2QsvWNQLEYCs" version="17.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-11T10:28:35.565Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="6OVy8CBqnMyNlBG5lU9k" version="17.1.1" type="github">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
-    <mxGraphModel dx="1738" dy="3294" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1203" dy="2789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -167,7 +167,7 @@
           <mxGeometry x="1" relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vAk8worVOPb-0eIm7YiB-63" value="Стать&lt;br&gt;авторизованным&lt;br&gt;покупателем" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="220" y="700" width="140" height="70" as="geometry" />
+          <mxGeometry x="290" y="700" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="vAk8worVOPb-0eIm7YiB-69" value="Система оформления заказа" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" parent="1" vertex="1">
           <mxGeometry x="390" y="360" width="80" height="26" as="geometry" />
