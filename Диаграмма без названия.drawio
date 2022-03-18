@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-03-18T21:08:48.514Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36" etag="6FbdJhOU-NOLai42qlvP" version="17.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-18T21:09:52.008Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36" etag="cWl9xe4GDMOUjZQZYWlL" version="17.1.3" type="github">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="1382" dy="740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="945" dy="506" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -170,7 +170,7 @@
             <mxPoint x="450" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nSxy3bsyDPYAtTU6iTXX-13" value="&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&quot;цена заказа&quot;&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=classic;rounded=0;fontSize=11;endFill=1;exitX=0.541;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="nSxy3bsyDPYAtTU6iTXX-43" target="7baba1c4bc27f4b0-8" edge="1">
+        <mxCell id="nSxy3bsyDPYAtTU6iTXX-13" value="&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&quot;стоимость заказа&quot;&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=classic;rounded=0;fontSize=11;endFill=1;exitX=0.541;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="nSxy3bsyDPYAtTU6iTXX-43" target="7baba1c4bc27f4b0-8" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="621.69" y="649.28" as="sourcePoint" />
             <mxPoint x="182.04761904761904" y="650.04" as="targetPoint" />
