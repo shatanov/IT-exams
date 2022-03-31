@@ -6,8 +6,6 @@
         $separators = @('.', ' ', ',', '/', '?', '!');
         $words = $string.Split($separators);
         foreach ($word in $words){
-            $maxLength = 0;
-            $maxWord = 
             if($word.StartsWith($substring) -eq $true){
                 echo $word
             }
