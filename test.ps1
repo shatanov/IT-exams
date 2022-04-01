@@ -1,4 +1,4 @@
-﻿function findWord(){
+﻿function findWord($substring){
     $path = 'C:\test.txt'
     $content = Get-Content -Path $path;
     for($i = 0; $i -lt $content.Length; $i++){
