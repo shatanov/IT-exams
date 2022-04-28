@@ -27,7 +27,7 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS Deliveries
                Title CHAR(120) NOT NULL, 
                Delivery_Date DATE NOT NULL)''')
 
-cursor.execute('''CREATE TABLE IF NOT EXISTS Receipts
+cursor.execute('''CREATE TABLE IF NOTReceipts
                (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
                Title CHAR(120) NOT NULL,
                Payment_Date DATE, 
@@ -54,6 +54,24 @@ cursor.execute("INSERT INTO Orders VALUES(6, 'Chair6', 'Ltetfjesgfgejhfgjesgzfjg
 cursor.execute("INSERT INTO Orders VALUES(7, 'Chair7', 'Ltetfjesgfgejhfgjesgzfjgsjfgjfgehj', 7, 7)")
 cursor.execute("INSERT INTO Orders VALUES(8, 'Chair8', 'Ltetfjesgfgejhfgjesgzfjgsjfgjfgehj', 8, 8)")
 cursor.execute("INSERT INTO Orders VALUES(9, 'Chair9', 'Ltetfjesgfgejhfgjesgzfjgsjfgjfgehj', 9, 9)")
+
+cursor.execute("INSERT INTO Deliveries VALUES(0, 'Chair', '2022-02-25')")
+cursor.execute("INSERT INTO Deliveries VALUES(1, 'Chair', '2022-02-25')")
+cursor.execute("INSERT INTO Deliveries VALUES(2, 'Chair', '2022-02-25')")
+cursor.execute("INSERT INTO Deliveries VALUES(3, 'Chair', '2022-02-25')")
+cursor.execute("INSERT INTO Deliveries VALUES(4, 'Chair', '2022-02-25')")
+cursor.execute("INSERT INTO Deliveries VALUES(5, 'Chair', '2022-02-25')")
+
+cursor.execute("INSERT INTO Receipts VALUES(0, 'Chair', '2022-02-25', 564.25)")
+cursor.execute("INSERT INTO Receipts VALUES(1, 'Chair', '2022-02-25', 564.25)")
+cursor.execute("INSERT INTO Receipts VALUES(2, 'Chair', '2022-02-25', 564.25)")
+cursor.execute("INSERT INTO Receipts VALUES(3, 'Chair', '2022-02-25', 564.25)")
+cursor.execute("INSERT INTO Receipts VALUES(4, 'Chair', '2022-02-25', 564.25)")
+cursor.execute("INSERT INTO Receipts VALUES(5, 'Chair', '2022-02-25', 564.25)")
+
+cursor.execute("DELETE FROM Customers WHERE ID = 6)")
+cursor.execute("DELETE FROM Customers WHERE Order_ID > 8)")
+cursor.execute("DELETE FROM Deliveries)")
 
 
 
