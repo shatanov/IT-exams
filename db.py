@@ -77,7 +77,9 @@ cursor.execute("UPDATE Customers SET Tel = 88005553567 WHERE ID = 5")
 cursor.execute("UPDATE Customers SET Tel = 88005553567, Surname = 'jACK' WHERE ID = 7")
 cursor.execute("UPDATE Orders SET Order_title = 'Стул' WHERE Order_title = 'Chair1'")
 cursor.execute("UPDATE Orders SET Order_title = 'Стул', Description = 'авыавыаыв' WHERE Order_title = 'Chair1'")
-
+# 1) SELECT COUNT(Orders.Order_title) FROM 'Orders'
+# 2) ---
+# 3) 
 connection.commit()
 
 
