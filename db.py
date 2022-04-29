@@ -27,7 +27,7 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS Deliveries
                Title CHAR(120) NOT NULL, 
                Delivery_Date DATE NOT NULL)''')
 
-cursor.execute('''CREATE TABLE IF NOTReceipts
+cursor.execute('''CREATE TABLE IF NOT EXISTS Receipts
                (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
                Title CHAR(120) NOT NULL,
                Payment_Date DATE, 
@@ -69,15 +69,16 @@ cursor.execute("INSERT INTO Receipts VALUES(3, 'Chair', '2022-02-25', 564.25)")
 cursor.execute("INSERT INTO Receipts VALUES(4, 'Chair', '2022-02-25', 564.25)")
 cursor.execute("INSERT INTO Receipts VALUES(5, 'Chair', '2022-02-25', 564.25)")
 
-cursor.execute("DELETE FROM Customers WHERE ID = 6)")
-cursor.execute("DELETE FROM Customers WHERE Order_ID > 8)")
-cursor.execute("DELETE FROM Deliveries)")
+cursor.execute("DELETE FROM Customers WHERE ID = 6")
+cursor.execute("DELETE FROM Customers WHERE Order_ID > 8")
+cursor.execute("DELETE FROM Deliveries")
 
-
+cursor.execute("UPDATE Customers SET Tel = 88005553567 WHERE ID = 5")
+cursor.execute("UPDATE Customers SET Tel = 88005553567, Surname = 'jACK' WHERE ID = 7")
+cursor.execute("UPDATE Orders SET Order_title = 'Стул' WHERE Order_title = 'Chair1'")
+cursor.execute("UPDATE Orders SET Order_title = 'Стул', Description = 'авыавыаыв' WHERE Order_title = 'Chair1'")
 
 connection.commit()
 
 
 connection.close()
-
-
