@@ -78,8 +78,22 @@ cursor.execute("UPDATE Customers SET Tel = 88005553567, Surname = 'jACK' WHERE I
 cursor.execute("UPDATE Orders SET Order_title = 'Стул' WHERE Order_title = 'Chair1'")
 cursor.execute("UPDATE Orders SET Order_title = 'Стул', Description = 'авыавыаыв' WHERE Order_title = 'Chair1'")
 # 1) SELECT COUNT(Orders.Order_title) FROM 'Orders'
-# 2) ---
-# 3) 
+# 2) SELECT * FROM 'Deliveries' ORDER BY Deliveries.	Delivery_Date DESC
+# 3)
+
+
+#6) SELECT * FROM 'Orders', 'Deliveries' WHERE (Orders.Delivery_ID = Deliveries.ID AND
+# (Deliveries.Delivery_Date < '2022-02-25' AND Deliveries.Delivery_Date > '2022-02-13'))
+#7) SELECT * FROM 'Orders', 'Deliveries', 'Receipts' WHERE Deliveries.Delivery_Date = Receipts.Payment_Date
+# AND (Orders.Delivery_ID = Deliveries.ID AND Orders.Receipt_ID = Receipts.ID)
+#8) SELECT Customers.ID, Customers.Name, Customers.Surname, Customers.Tel FROM 'Orders', 'Deliveries', 'Customers'
+# WHERE (Orders.Delivery_ID = Deliveries.ID AND Deliveries.Delivery_Date > '2022-02-13' AND Orders.Customers_ID = Customers.ID)
+#9) SELECT * FROM 'Orders', 'Receipts' WHERE (Orders.Receipt_ID = Receipts.ID AND Receipts.Price > 400.00)
+#10) SELECT SUM(Receipts.Price) FROM 'Orders', 'Receipts', 'Deliveries' WHERE Deliveries.Delivery_Date LIKE '%-02-%'
+#AND Deliveries.ID = Orders.Delivery_ID
+#AND Receipts.ID = Orders.Receipt_ID
+#11) SELECT * FROM 'Orders', 'Customers' WHERE Orders.Customers_ID = Customers.ID AND Customers.Tel IS NULL
+#12)
 connection.commit()
 
 
