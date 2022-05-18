@@ -1,9 +1,13 @@
 import statistics
 import csv
+import numpy
+import matplotlib.pyplot as plt
 
-variance = lambda data: statistics.pvariance(data)
-mediana = lambda data: statistics.median([float(j) for i in data for j in data[i]])
-
+mean = lambda data: statistics.mean(data)
+variance = lambda data: statistics.variance(data)
+mediana = lambda data: statistics.median(data)
+perc_25 = lambda data: numpy.percentile(data, 25)
+perc_75 = lambda data: numpy.percentile(data, 75)
 def set_x_array(data: list):
     x = []
     for i in range(1, len(data)):
@@ -13,17 +17,9 @@ def set_x_array(data: list):
 def set_y_array(data: list):
     y = []
     for i in range(1, len(data)):
-        y.append(data[i][1:])
+        y.append(int(data[i][1]))
     return y
 
-
-def mean_y(y: list):
-    mean_y = []
-    for i in range(len(y)):
-        y_i = y[i]
-        mean = statistics.mean([float(i) for i in y_i])
-        mean_y.append(mean)
-    return mean_y
 
 
 def read_csv_file(file: str):
@@ -31,13 +27,28 @@ def read_csv_file(file: str):
         data = csv.reader(f)
         return list(data)
 
+def draw_graph(data):
+    plt.hist(data, 20)
+    plt.axvline(perc_25(data=data), color='r')
+    plt.axvline(perc_75(data=data), color='b')
+    plt.show()
+
 
 def main():
     data = read_csv_file(file="data.csv")
     x = set_x_array(data=data)
     y = set_y_array(data=data)
-    mean = mean_y(y=y)
-    print(mediana(data=y))
+    mean_y= mean(data=y)
+    variance_y = variance(data=y)
+    med = mediana(data=y)
+    print(mean_y)
+    print(variance_y)
+    print(med)
+    print(perc_25(data=y))
+    print(perc_75(data=y))
+    draw_graph(data=y)
+
+
 
 if __name__ == "__main__":
     main()
