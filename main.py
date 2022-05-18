@@ -8,7 +8,7 @@ Y_POINTS_COUNT = 10
 
 set_x = lambda: [float(int(i) / X_MAX_VALUES) for i in range(1, X_MAX_VALUES+1)]
 func = lambda x: 2*math.e**(x+4) + 5
-set_delta = lambda y_arrays:((y_arrays[1] - y_arrays[0])) * 1000
+set_delta = lambda y_arrays:((y_arrays[1] - y_arrays[0])) * X_MAX_VALUES
 
 def set_y(x_arrays):
     y = []
@@ -30,16 +30,16 @@ def set_randon_y(y_arrays, delta):
 
 
 def write_to_csv_file(x_array, y_array):
-    title = ['X', 'Y1', 'Y2', 'Y3', 'Y4', 'Y5', 'Y6', 'Y7', 'Y8', 'Y9', 'Y10']
+    title = ['X', 'Y']
     with open('data.csv', 'w', newline='') as csvfile:
         filewriter = csv.writer(csvfile, delimiter=',',
                                 quotechar='|', quoting=csv.QUOTE_MINIMAL)
         filewriter.writerow(title)
         for i in range(len(x_array)):
-            data = f'{x_array[i] * X_MAX_VALUES}, {y_array[i][0]}, {y_array[i][1]}, {y_array[i][2]}, {y_array[i][3]}, {y_array[i][4]}' \
-                   f', {y_array[i][5]}, {y_array[i][6]}, {y_array[i][7]}, {y_array[i][8]}, {y_array[i][9]}'
+            for j in range(len(y_array[0])):
+                data = f'{int(x_array[i] * X_MAX_VALUES)}, {int(y_array[i][j] * X_MAX_VALUES)}'
 
-            filewriter.writerow(data.split(', '))
+                filewriter.writerow(data.split(','))
 
 
 
